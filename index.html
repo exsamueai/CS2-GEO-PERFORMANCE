@@ -187,10 +187,28 @@
             ნაბიჯი 4:ამოვარდება პატარა ფანჯარა სადაც უნდა ჩაწეროთ რიცხვი 26. მის გვერდით ორი წერტილის მოსანიშნი ნაწერია, უნდა მოვნიშნოთ Hexadecimal ვაწვებით OK-ს და დახურეთ ფანჯარა!</p>
         </section>
 
-                <!-- ბლოკი 13 -->
+                <!-- ბლოკი 12 -->
         <section class="guide-card">
             <h2>🎮 13. Fullscreen Optimizations გათიშვა (Input Lag Fix)</h2>
             <p>Steam-ში შევდივართ, ვაჭერთ CS2-ს მარჯვენა მაუსით, ვირჩევთ Manage -> Browse local files. ამოგდებულ ფანჯარაში შევდივართ game -> bin -> win64 ფოლდერში, სადაც ვიპოვით მთავარ cs2 ფაილს. ვაჭერთ მას მარჯვენა მაუსით, ირჩევთ Properties, გადავდივართ Compatibility ჩანართში, ვპოულობთ და ვნიშნავთ უჯრას Disable fullscreen optimizations, აქვე დაბლა ვაჭერთ Change high DPI settings უჯრას, ვნიშნავთ Override high DPI scaling behavior, ვაწვებით OK-ს, შემდეგ Apply-ს, ბოლოს OK-ს და ვხურავთ ფანჯარას!</p>
+        </section>
+
+                <!-- ბლოკი 12 -->
+        <section class="guide-card">
+            <h2>🏎️ 12. მაქსიმალური ვიდეობარათის პრიორიტეტი (REGISTRY EDITOR)</h2>
+            <p>Windows-მა რომ მთელი ძალა და რესურსი უშუალოდ თამაშს დაუთმოს, ჩაწერეთ ეს პარამეტრი რეესტრიდან:</p>
+            <ul>
+                <li><strong>ნაბიჯი 1:</strong> Windows-ის ძებნაში ჩაწერეთ <strong>regedit</strong> და გახსენით (Registry Editor).</li>
+                <li><strong>ნაბიჯი 2:</strong> ზედა მისამართების ზოლში წაშალეთ სიტყვა <em>Computer</em>, ჩასვით ეს გზა და დააჭირეთ Enter:</li>
+            </ul>
+            <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options</code>
+            <ul>
+                <li><strong>ნაბიჯი 3:</strong> მარცხენა მენიუში იპოვეთ ფოლდერი <strong>Image File Execution Options</strong>, დააჭირეთ მარჯვენა მაუსით -> <strong>New</strong> -> <strong>Key</strong> და დაარქვით <code>cs2.exe</code></li>
+                <li><strong>ნაბიჯი 4:</strong> ამ ახალ შექმნილ <code>cs2.exe</code> ფოლდერს ისევ დააჭირეთ მარჯვენა მაუსით -> <strong>New</strong> -> <strong>Key</strong> და დაარქვით <code>PerfOptions</code></li>
+                <li><strong>ნაბიჯი 5:</strong> შედით <strong>PerfOptions</strong> ფოლდერში, მარჯვენა ცარიელ მხარეს დააჭირეთ მარჯვენა მაუსით -> <strong>New</strong> -> <strong>DWORD (32-bit) Value</strong> და დაარქვით <code>CpuPriorityClass</code></li>
+                <li><strong>ნაბიჯი 6:</strong> ორჯერ დააჭირეთ ამ <code>CpuPriorityClass</code> ფაილს, გამოსულ პატარა ფანჯარაში (Value data) ჩაწერეთ ციფრი <strong>3</strong> (რაც ნიშნავს მაღალ High პრიორიტეტს).</li>
+                <li><strong>ნაბიჯი 7:</strong> იქვე გვერდით (Base) აუცილებლად მონიშნეთ <strong>Hexadecimal</strong>, დააჭირეთ OK-ს და დახურეთ რეესტრის ფანჯარა!</li>
+            </ul>
         </section>
 
 
