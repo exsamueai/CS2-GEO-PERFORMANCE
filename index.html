@@ -3,220 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS2 ჯორჯია | ქართული Counter-Strike 2 პორტალი</title>
-    <style>
-        /* ძირითადი სტილები */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #121214;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* ნავიგაცია */
-        header {
-            background-color: #1a1a1e;
-            border-bottom: 2px solid #de9b35;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #de9b35;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #de9b35;
-        }
-
-        /* მთავარი სექცია (Hero) */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        .hero h1 span {
-            color: #de9b35;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-            max-width: 600px;
-        }
-
-        .btn {
-            background-color: #de9b35;
-            color: #121214;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #ffb443;
-        }
-
-        /* სერვერების სექცია */
-        .servers {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .servers h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 32px;
-            color: #de9b35;
-        }
-
-        .server-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .server-card {
-            background-color: #1a1a1e;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #de9b35;
-        }
-
-        .server-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .server-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            color: #aaaaaa;
-        }
-
-        .ip-box {
-            background-color: #25252b;
-            padding: 10px;
-            border-radius: 4px;
-            font-family: monospace;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* ფუტერი */
-        footer {
-            background-color: #0b0b0c;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            font-size: 14px;
-            color: #777777;
-            border-top: 1px solid #1a1a1e;
-        }
-    </style>
+    <title>CS2 Georgia - FPS Boost & Performance</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ნავიგაცია -->
+    <!-- ჰედერი / სათაური -->
     <header>
-        <div class="logo">CS2 <span>GEORGIA</span></div>
-        <nav>
-            <a href="#">მთავარი</a>
-            <a href="#servers">სერვერები</a>
-            <a href="#">ფორუმი</a>
-            <a href="#">დისკორდი</a>
-        </nav>
+        <h1>CS2 GEORGIA</h1>
+        <p>გაზარდე FPS და გააუმჯობესე თამაშის პერფორმანსი</p>
     </header>
 
-    <!-- მთავარი სექცია -->
-    <section class="hero">
-        <h1>ქართული <span>CS2</span> საზოგადოება</h1>
-        <p>შეუერთდი საუკეთესო ქართულ Counter-Strike 2 სერვერებს, ითამაშე მეგობრებთან ერთად და მიიღე მონაწილეობა ტურნირებში!</p>
-        <a href="#servers" class="btn">სერვერების სიები</a>
-    </section>
+    <!-- მთავარი კონტენტი -->
+    <main>
+        <section class="guide-card">
+            <h2>1. Launch Options (გაშვების პარამეტრები)</h2>
+            <p>ჩაწერეთ ეს კოდი Steam-ის ლაუნჩერში:</p>
+            <code>-novid -high -threads 4 +fps_max 0</code>
+        </section>
 
-    <!-- სერვერები -->
-    <section class="servers" id="servers">
-        <h2>ჩვენი სერვერები</h2>
-        <div class="server-grid">
-            
-            <!-- სერვერი 1 -->
-            <div class="server-card">
-                <h3>CS2.GE #1 [PUBLIC] [128 TICK]</h3>
-                <div class="server-info">
-                    <span>მოთამაშეები: 18/24</span>
-                    <span>რუკა: de_dust2</span>
-                </div>
-                <div class="ip-box">
-                    <span>connect pub.cs2.ge:27015</span>
-                </div>
-            </div>
+        <section class="guide-card">
+            <h2>2. საუკეთესო ვიდეო პარამეტრები (In-game Settings)</h2>
+            <ul>
+                <li><strong>Main Menu Background Scenery:</strong> Anubis (ყველაზე მსუბუქია)</li>
+                <li><strong>Global Shadow Quality:</strong> High (კაცების დასანახად) ან Medium</li>
+                <li><strong>Model / Texture Detail:</strong> Low</li>
+                <li><strong>Shader Detail:</strong> Low</li>
+                <li><strong>Boost Player Contrast:</strong> Enabled</li>
+            </ul>
+        </section>
+    </main>
 
-            <!-- სერვერი 2 -->
-            <div class="server-card">
-                <h3>CS2.GE #2 [RETRACT / AWP]</h3>
-                <div class="server-info">
-                    <span>მოთამაშეები: 8/12</span>
-                    <span>რუკა: awp_india</span>
-                </div>
-                <div class="ip-box">
-                    <span>connect awp.cs2.ge:27016</span>
-                </div>
-            </div>
-
-            <!-- სერვერი 3 -->
-            <div class="server-card">
-                <h3>CS2.GE #3 [5V5 MATCHMAKING]</h3>
-                <div class="server-info">
-                    <span>მოთამაშეები: 0/10</span>
-                    <span>რუკა: de_mirage</span>
-                </div>
-                <div class="ip-box">
-                    <span>connect 5v5.cs2.ge:27017</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ფუტერი -->
     <footer>
-        <p>&copy; 2026 CS2 Georgia. ყველა უფლება დაცულია.</p>
+        <p>&copy; 2026 cs2GEORGIA. დამზადებულია ქართველი გეიმერებისთვის.</p>
     </footer>
 
 </body>
