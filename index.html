@@ -86,13 +86,58 @@
                 <li><strong>SysMain-ის გათიშვა:</strong> Windows-ის ძებნაში ჩაწერეთ Services, მოძებნეთ SysMain, დააჭირეთ მარჯვენა მაუსით -> Properties, აირჩიეთ Disabled და დააჭირეთ Stop. ეს დაასვენებს თქვენს HDD დისკს.</li>
             </ul>
         </section>
-
-        <!-- ბლოკი 6 -->
+        <!-- ბლოკი 7 -->
         <section class="guide-card">
-            <h2>❌ 6. Microsoft Edge-ის და ფონური პროცესების გათიშვა</h2>
-            <p>ფონური პროგრამები ბევრ ოპერატიულ მეხსიერებას (RAM) და პროცესორს მოიხმარენ:</p>
+            <h2>🛡️ 7. Core Isolation (HVCI) გათიშვა FPS-ის მოსამატებლად</h2>
+            <p>Windows-ის ეს ფუნქცია ხშირად აგდებს FPS-ს თამაშებში. მისი გათიშვა შეგიძლიათ რეესტრიდან:</p>
             <ul>
-                <li><strong>KILL Microsoft Edge:</strong> შედით Edge-ის პარამეტრებში (Settings -> System and performance) და გამორთეთ ოფცია <em>"Startup boost"</em> და <em>"Continue running background extensions and apps when Microsoft Edge is closed"</em>. ეს სრულად აჩერებს Edge-ის პროცესებს ბექგრაუნდში.</li>
-                <li><strong>ზედმეტი აპლიკაციების წაშლა:</strong> შედით Windows Settings -> Apps -> Installed Apps და წაშალეთ ყველა ის სტანდარტული ვინდოუსის აპლიკაცია, რომელსაც არასდროს იყენებთ.</li>
+                <li>Windows-ის ძებნაში ჩაწერეთ <strong>regedit</strong> და გახსენით (Registry Editor).</li>
+                <li>ზედა მისამართების ზოლში წაშალეთ სიტყვა <em>Computer</em>, ჩასვით ეს გზა და დააჭირეთ Enter:</li>
+            </ul>
+            <code>KEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity</code>
+            <ul>
+                <li>მარჯვენა მხარეს მოძებნეთ ფაილი <strong>Enabled</strong>, ორჯერ დააჭირეთ მას და Value Data შეუცვალეთ <strong>1-დან 0-ზე</strong>.</li>
+                <li>გადატვირთეთ კომპიუტერი.</li>
+            </ul>
+            <p class="warning-text" style="color: #ffcc00; font-size: 0.9rem; margin-top: 10px;">
+                ⚠️ <strong>შენიშვნა:</strong> ამის გამორთვის შემდეგ, შესაძლოა FACEIT ანტიჩეთმა მოგთხოვოთ მისი ისევ ჩართვა, თუმცა მომხმარებლების უმეტესობას პრობლემას არ უქმნის.
+            </p>
+        </section>
+        <!-- ბლოკი 8 -->
+        <section class="guide-card">
+            <h2>⚙️ 8. Windows-ის ზედმეტი სერვისების (Services) გათიშვა</h2>
+            <p>Windows-ის ძებნაში ჩაწერეთ <strong>Services</strong>. თითოეულ ქვემოთ ჩამოთვლილ სერვისს დააჭირეთ მარჯვენა მაუსით -> <strong>Properties</strong>, ოფციაში <em>Startup type</em> აირჩიეთ <strong>Disabled</strong> და დააჭირეთ <strong>Stop</strong>.</p>
+            
+            <ul class="services-list">
+                <li>Connected User Experiences and Telemetry</li>
+                <li>Download Map Manager</li>
+                <li>Print Spooler</li>
+                <li>Windows Biometric Service</li>
+                <li>Windows Insider Service</li>
+                <li>BitLocker Drive Encryption Service</li>
+                <li>Diagnostic Execution Service</li>
+                <li>Diagnostic Service Host</li>
+                <li>Diagnostic System Host</li>
+                <li>Netlogon</li>
+                <li>Parental Controls</li>
+                <li>Remote Desktop Configuration</li>
+                <li>Remote Desktop Services</li>
+                <li>SysMain</li>
+                <li>Themes</li>
+                <li>User Experience Virtualization Service</li>
+                <li>WalletService</li>
+                <li>Windows Mobile Hotspot Service</li>
+                <li>Geolocation Service</li>
+                <li>Phone Service</li>
+                <li>Sensor Service</li>
+                <li>Smart Card</li>
+                <li>Work Folders</li>
+                <li>Touch Keyboard and Handwriting Panel Service</li>
+                <li style="color: #ffaa00;">AVCTP service <span style="color: #ffffff;">(⚠️ არ გამორთოთ, თუ იყენებთ Bluetooth ყურსასმენებს!)</span></li>
+                <li style="color: #ffaa00;">Internet Connection Sharing (ICS) <span style="color: #ffffff;">(⚠️ არ გამორთოთ, თუ იყენებთ VPN-ს!)</span></li>
+                <li style="color: #ffaa00;">Windows Update <span style="color: #ffffff;">(⚠️ აჩერებს Windows-ის განახლებებს!)</span></li>
+                <li>Diagnostic Policy Service</li>
             </ul>
         </section>
+
+     
