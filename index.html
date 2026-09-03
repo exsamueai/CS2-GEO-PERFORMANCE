@@ -300,5 +300,36 @@
                 📥 ჩამოტვირთე სრული NVIDIA PACK V4
             </a>
         </section>
+        
+        <!-- ჩამოწერილი ფაილის დაყენება: NVCleanstall გიდი -->
+        <section class="guide-card">
+            <h2>🟢 13. NVIDIA დრაივერის სწორი ინსტალაცია (NVCleanstall გიდი)</h2>
+            <p>NVIDIA-ს სტანდარტულ დრაივერებს მოყვება უამრავი ფარული ვირუსი, რეკლამა და თვალთვალის სისტემა (Telemetry), რომელიც ფონურ რეჟიმში ტვირთავს პროცესორს და აგდებს FPS-ს. თქვენს გადმოწერილ პაკეტში იპოვეთ ფაილი <strong>NVCleanstall_1.19.0.exe</strong>, გახსენით და მიჰყევით ამ მარტივ ნაბიჯებს:</p>
+            
+            <p><strong>Ნაბიჯი 1 (პირველი ფანჯარა):</strong></p>
+            <p>პროგრამა თავად იპოვის თქვენს ვიდეობარათს. პირველივე უჯრაზე <em>(Install best driver for my hardware)</em> დატოვეთ მონიშნული თოკი (პტიჩკა) და პირდაპირ დააჭირეთ ქვედა მარჯვენა კუთხეში ღილაკს <strong>Next</strong>.</p>
+
+            <p><strong>Ნაბიჯი 2 (კომპონენტების მოშორება):</strong></p>
+            <p>გაიხსნება დიდი სია. მაქსიმალური პერფორმანსისთვის, <strong>ყველა უჯრიდან მოხსენით თოკი</strong> და დატოვეთ მონიშნული მხოლოდ სულ პირველი: <strong>Display Driver (required)</strong>. ყველაფერი დანარჩენი ზედმეტი ნაგავია. ისევ დააჭირეთ <strong>Next</strong>-ს.</p>
+
+            <p><strong>Ნაბიჯი 3 (ყველაზე მთავარი - ოპტიმიზაციების ჩართვა):</strong></p>
+            <p>ახალ ფანჯარაში სათითაოდ მონიშნეთ (ჩაუსვით პტიჩკები) ზუსტად ეს პარამეტრები:</p>
+            <ul>
+                <li><strong>Disable Installer Telemetry & Advertising</strong> (თიშავს რეკლამებს და თვალთვალს).</li>
+                <li><strong>Unattended Express Installation</strong> (რაც ნიშნავს სწრაფ და ავტომატურ დაყენებას).</li>
+                <li><strong>Perform a Clean Installation</strong> (სრულად შლის ძველ დრაივერებს და ნარჩენებს).</li>
+                <li><strong>Disable Multiplane Overlay (MPO)</strong> (აშორებს თამაშებში ეკრანის უცაბედ ციმციმს და ციმციმა შავ კუთხეებს).</li>
+                <li><strong>Show Expert Tweaks</strong> (ხსნის დამატებით ძლიერ ფუნქციებს).</li>
+                <li><strong>Disable Driver Telemetry</strong> (თიშავს შიდა სისტემურ თვალთვალს).</li>
+                <li><strong>Disable NVIDIA Container</strong> (თიშავს ფონურ პროცესებს და ათავისუფლებს ოპერატიულს).</li>
+                <li><strong>Disable NVIDIA HD Audio device sleep timer</strong> (აქრობს თამაშში ხმის დაგვიანებას ანუ Audio Lag-ს).</li>
+                <li><strong>Enable Message Signaled Interrupts (MSI)</strong> (მკვეთრად ამცირებს მაუსის და კლავიატურის დაგვიანებას ანუ Input Lag-ს).</li>
+                <li><strong>Disable HDCP</strong> (თიშავს ვიდეოების დაცვის სისტემას, რაც თამაშებში FPS-ს უმატებს).</li>
+            </ul>
+            <p>ამის შემდეგ ისევ დააჭირეთ <strong>Next</strong>-ს და დაელოდეთ რამდენიმე წამი ფაილის მომზადებას.</p>
+
+            <p><strong>Ნაბიჯი 4 (დასრულება და ინსტალაცია):</strong></p>
+            <p>ბოლო ფანჯარაში დააჭირეთ სულ პირველივე ღილაკს — <strong>Install</strong>. გაიხსნება NVIDIA-ს სტანდარტული, მაგრამ უკვე სრულად გასუფთავებული საინსტალაციო ფანჯარა. დაადასტურეთ და დაელოდეთ ინსტალაციის დასრულებას!</p>
+        </section>
 
         
