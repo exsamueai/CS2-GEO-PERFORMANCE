@@ -1,0 +1,212 @@
+/* ----------------------------------------------------
+   CS2 GEORGIA - PREMIUM GLASSMORPHISM & SMOOTH STYLE
+   ---------------------------------------------------- */
+
+/* გლუვი და ნაზი სქროლინგი */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ძირითადი ფონი - CS2-ის ოფიციალური 4K არტი */
+body {
+    background-image: linear-gradient(rgba(10, 11, 18, 0.88), rgba(10, 11, 18, 0.92)), url('https://wallpapercat.com');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #f8fafc;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* საიტის ზედა ნაწილი (Header) - უმაღლესი დონის მინის ეფექტი */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(15, 23, 42, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+header h1 {
+    background: linear-gradient(135deg, #ff7b1a 0%, #de6716 50%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 4.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    filter: drop-shadow(0 4px 15px rgba(222, 103, 22, 0.2));
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+/* მთავარი კონტენტის კონტეინერი */
+main {
+    max-width: 860px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* ულტრა-რბილი, მინისებრი რჩევების ფანჯრები (Glass Cards) */
+.guide-card {
+    background: rgba(30, 41, 59, 0.45);
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    
+    /* ნაზი მინის ეფექტის ჩარჩო */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #de6716; /* CS2 ნარინჯისფერი მარცხნივ */
+    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* ანიმაციის ტრანზიცია */
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-left-color 0.4s ease;
+}
+
+/* ფანჯარაზე მაუსის მიტანის (Hover) უაღრესად ნაზი ეფექტი */
+.guide-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-left-color: #38bdf8; /* რბილად გადადის CS2-ის ელექტრო-ლურჯ ფერში */
+    box-shadow: 0 30px 60px rgba(56, 189, 248, 0.1), 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.guide-card h2 {
+    color: #f8fafc;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.guide-card p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* სიები */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #ffffff;
+}
+
+li strong {
+    color: #ff9d42;
+    font-weight: 600;
+}
+
+/* კოდის ყუთები (ნეონის მწვანე მატრიცის ეფექტით) */
+code {
+    background-color: rgba(15, 23, 42, 0.85);
+    padding: 16px 20px;
+    display: block;
+    color: #34d399; /* ნაზი ნეონის მწვანე */
+    border-radius: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    border: 1px solid rgba(52, 211, 153, 0.15);
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+code:hover {
+    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 15px rgba(52, 211, 153, 0.15);
+}
+
+/* სერვისების სია (ბლოკი 9) */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 12px 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.services-list li {
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    padding-bottom: 6px;
+}
+
+/* ჩამოტვირთვის პრემიუმ ელექტრო-ლურჯი ღილაკი */
+a[download], a[target="_blank"] {
+    display: inline-block;
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+    color: #ffffff;
+    padding: 14px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+a[download]:hover, a[target="_blank"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.5);
+}
+
+/* საიტის ქვედა ნაწილი (Footer) */
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    color: #475569;
+    font-size: 0.9rem;
+    background-color: rgba(15, 23, 42, 0.95);
+    margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* მობილურებისთვის ადაპტაცია */
+@media (max-width: 600px) {
+    header {
+        padding: 50px 15px;
+    }
+    header h1 {
+        font-size: 2.6rem;
+    }
+    .guide-card {
+        padding: 22px;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
