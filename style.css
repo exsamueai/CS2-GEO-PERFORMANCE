@@ -178,3 +178,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
