@@ -1,3 +1,7 @@
+/* ====================================================
+   CS2 GEORGIA - ORIGINAL FULL CENTERED GAMING STYLE
+   ==================================================== */
+
 /* საერთო პარამეტრები მთელი გვერდისთვის და ეპიკური CS2 ტერორისტის (T) ფონი */
 body {
     background-image: linear-gradient(rgba(14, 16, 23, 0.85), rgba(14, 16, 23, 0.85)), url('https://redd.it');
@@ -12,7 +16,7 @@ body {
     line-height: 1.6;
 }
 
-/* საიტის სათაურის (Header) სტილი */
+/* საიტის სათაურის (Header) სტილი - სრულად შუაში */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -130,7 +134,7 @@ code {
     padding-bottom: 4px;
 }
 
-/* ჩამოტვირთვის მწვანე ნეონის ღილაკი */
+/* ჩამოტვირთვის, დონაციის და დისქორდის მწვანე/ლურჯი გეიმერული ღილაკები */
 a[download], a[target="_blank"] {
     display: inline-block;
     background-color: #00ffcc;
@@ -178,21 +182,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-main::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-                                                                                                                                      <!-- გვერდითა მარცხენა ბლოკი: დონაციის განყოფილება -->
-        <div style="float: left; width: 280px; margin-right: 30px; margin-bottom: 30px; text-align: center;">
-            <div class="guide-card" style="border-top: 4px solid #00ffcc; background-color: #161923; padding: 25px; box-shadow: 0 10px 25px rgba(0, 255, 204, 0.15); border-radius: 12px;">
-                <h3 style="color: #00ffcc; font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 12px;">💖 მხარდაჭერა</h3>
-                <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; margin-bottom: 20px;">თუ ეს გაიდი დაგეხმარათ და გსურთ პროექტის მხარდაჭერა, შეგიძლიათ გააკეთოთ ნებისმიერი სიმბოლური დონაცია:</p>
-                
-                <!-- შენი ნამდვილი DonationAlerts ლინკი ჩასმულია აქ -->
-                <a href="https://donationalerts.com" target="_blank" style="background-color: #00ffcc; color: #0e1017; font-size: 1.05rem; padding: 14px 24px; display: block; font-weight: bold; text-decoration: none; border-radius: 6px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);">
-                    🎁 მოტივაციის მოსაცემად &lt;3
-                </a>
-            </div>
-        </div>
